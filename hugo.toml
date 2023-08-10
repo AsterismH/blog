@@ -1,0 +1,160 @@
+baseURL = "https://examplesite.com/"
+languageCode = 'en-us'
+title = "Asterism's Blog"
+paginate = 5
+theme = "PaperMod"
+
+enableRobotsTXT = true # related with search engine crawlers
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+# googleAnalytics = "UA-123-45"
+pygmentsUseClasses = true # related with syntax highlighting
+
+[minify]
+disableXML = true
+minifyOutput = true
+
+[params]
+env = "production"
+title = "Asterism's Blog"
+description = "ExampleSite description"
+keywords = [ "Blog", "Portfolio", "PaperMod" ]
+author = "Asterism"
+images = [ "<link or path of image for opengraph, twitter-cards>" ]
+DateFormat = "January 2, 2006"
+defaultTheme = "auto"
+disableThemeToggle = false
+ShowReadingTime = true
+ShowShareButtons = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowWordCount = true
+ShowRssButtonInSectionTermList = true
+UseHugoToc = true
+disableSpecial1stPost = false
+disableScrollToTop = false
+comments = false
+hidemeta = false
+hideSummary = false
+showtoc = false
+tocopen = false
+
+  [params.assets]
+  favicon = "icons/favicon.ico"
+  favicon16x16 = "icons/favicon-16x16.png"
+  favicon32x32 = "icons/favicon-32x32.png"
+  apple_touch_icon = "icons/apple-touch-icon.png"
+  safari_pinned_tab = "icons/apple-touch-icon.png"
+
+  [params.label]
+  text = "Asterism"
+  # icon = "icons/apple-touch-icon.png"
+  iconHeight = 35
+
+  [params.profileMode]
+  enabled = false
+  title = "ExampleSite"
+  subtitle = "This is subtitle"
+  imageUrl = "<img location>"
+  imageWidth = 120
+  imageHeight = 120
+  imageTitle = "my image"
+
+    [[params.profileMode.buttons]]
+    name = "Posts"
+    url = "posts"
+
+    [[params.profileMode.buttons]]
+    name = "Tags"
+    url = "tags"
+
+  [params.homeInfoParams]
+  Title = "Asterism ✨"
+  Content = """ 
+  *In the course of time the extravagant elements are shed one by one: alchemy evolves into chemistry, astrology into astronomy, magic into experiment; and the mystical Pythagorean numbersystem fosters a taste for mathematics. What appears the longest way round is sometimes the shortest way home.*
+
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;-- Frank Thilly, *A History of Philosophy*
+  """
+  #-- Frank Thilly, *A History of Philosophy*
+
+  [[params.socialIcons]]
+  name = "cv"
+  url = "https://xingqiuhe.github.io/homepage/"
+
+  [[params.socialIcons]]
+  name = "googlescholar"
+  url = "https://scholar.google.com/citations?user=YFJagJ8AAAAJ&hl=en&oi=ao"
+
+  [[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/XingqiuHe"
+
+[params.analytics.google]
+SiteVerificationTag = "XYZabc"
+
+[params.analytics.bing]
+SiteVerificationTag = "XYZabc"
+
+[params.analytics.yandex]
+SiteVerificationTag = "XYZabc"
+
+  [params.cover]
+  hidden = true
+  hiddenInList = true
+  hiddenInSingle = true
+
+  [params.editPost]
+  URL = "https://github.com/<path_to_repo>/content"
+  Text = "Suggest Changes"
+  appendFilePath = true
+
+  [params.fuseOpts]
+  isCaseSensitive = false
+  shouldSort = true
+  location = 0
+  distance = 1000
+  threshold = 0.4
+  minMatchCharLength = 0
+  keys = [ "title", "permalink", "summary", "content" ]
+
+[[menu.main]]
+identifier = "categories"
+name = "Category"
+url = "/categories/"
+weight = 3
+
+[[menu.main]]
+identifier = 'search'
+name = "Search"
+weight = 2
+url = '/search/'
+
+[[menu.main]]
+identifier = 'archive'
+name = "Archive"
+weight = 1
+url = '/archives/'
+
+[[menu.main]]
+identifier = "tags"
+name = "Tags"
+url = "/tags/"
+weight = 4
+
+# [[menu.main]]
+# identifier = "example"
+# name = "example.org"
+# url = "https://example.org"
+# weight = 30
+
+[markup.highlight]
+noClasses = false
+
+[taxonomies]
+category = 'categories'
+tag = 'tags'
+
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
