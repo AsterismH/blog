@@ -1,4 +1,4 @@
-baseURL = "https://examplesite.com/"
+baseURL = "https://asterismh.github.io/blog/"
 languageCode = 'en-us'
 title = "Asterism's Blog"
 paginate = 5
